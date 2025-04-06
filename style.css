@@ -1,7 +1,82 @@
-#menu
+body 
 {
+	background-image: url(img/pexels-francesco-ungaro-2325447.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#menu 
+{
+	overflow: hidden;
+	background-color: teal;
 	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+	top: 0;
+	width: 99%;
+}
+
+
+#menu a
+{
+	float: left;
+	color: seashell;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;;
+}
+
+#menu a:hover
+{
+	background-color: #ddd;
+	color: black;
+}
+
+.section
+{
+	max-width: fit-content;
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: xx-large;
+}
+
+.content
+{
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: transparent;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.embed
+{
+	margin: 20px auto;
+	text-align: center;
+}
+
+
+.section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background-color: rgb(47, 47, 222);
+  z-index: -1;
+}
+
+.section {
+  position: relative; /* required for pseudo-element positioning */
+  padding: 20px;
+  margin: 60px auto;
 }

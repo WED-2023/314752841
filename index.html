@@ -1,193 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v22.0"></script>
+
+    <div id="menu">
+      <a href="#about">About Me</a>
+      <a href="#photos">My Photos</a>
+      <a href="#playlist">My Playlist</a>
+      <a href="#like">Like</a>
+      <a href="#qrcoder">QR code</a>
+      <a href="#spa">Q&A</a>
+      <a href="#contact">Contact Me</a>
+    </div>
 		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="about" class="section">
+      about me
+    </section>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+    <section class="content">
+      Hello, my name is Harold Hyde Paine!
+      <p>I'm someone who believes that staying active and creative keeps the spirit young.  
+        I’ve always found peace and inspiration in nature, which is why hiking is one of my favorite pastimes.  
+        There's nothing quite like reaching a summit and taking in a breathtaking view.  
+        Those same landscapes often end up on my canvas, as I enjoy capturing nature through painting.  
+        Art allows me to slow down and express the beauty I see in the world around me.  
+        On livelier days, you’ll often catch me with a cricket bat in hand, enjoying a friendly match.  
+        It’s a sport that keeps me moving and connected with others.  
+        I also have a soft spot for bowling — something about the sound of pins falling is just so satisfying.  
+        Whether I'm on a trail, holding a paintbrush, or sharing laughs over a game, I make the most of every moment.  
+        Life is a gift, and I try to live mine with joy, color, and a touch of adventure.!</p>
+    </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="photos" class="section">
+      my photos
+    </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+    <section class="embed">
+      <img src="img/harold2.jpg">
+      <img src="img/harold3.jpg" style="width: 237px;">
+      <img src="img/harold4.jpg" style="width: 275px">
+    </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="playlist" class="section">
+      my playlist
+    </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+    <section class="embed">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=iVGagTQOfEchiAKn&amp;list=PLbDzgpyqmOIh5j_5nMnbMlg1fGFE-e8CN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="like" class="section">
+      give me a like
+    </section>
 
+    <section class="embed">
+      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+    </section>
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
-</body>
+    <section id="qrcoder" class="section">
+    scan my code
+    </section>
+
+    <section class="embed">
+      <img src="img/qr_code.png">
+    </section>
+
+    <section id="spa" class="section">
+    ans
+    </section>
+
+    <section id="contact" class="section">
+    contact me
+    </section>
+
+    <section class="content">
+      <h2>Send me an e-mail:</h2>
+
+      <form action="mailto:livshmic@post.bgu.ac.il" method="post" enctype="text/plain">
+      Your name:<br>
+      <input type="text" name="name"><br>
+      E-mail:<br>
+      <input type="text" name="mail"><br>
+      Message:<br>
+      <input type="text" name="comment" size="50"><br><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+      </form>
+    </section>
+
+    <script type="text/javascript">
+    $(function(){
+      $("#nav a").click(function(e){
+        e.preventDefault();
+        $('html,body').scrollTo(this.hash,this.hash); 
+      });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(document).scroll(function() {
+        $('#menu').toggle($(this).scrollTop()>1000)
+    });​
+    </script>
+  </body>
 </html>
